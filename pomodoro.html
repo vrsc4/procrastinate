@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer - ClockGain</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pomodoro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">ClockGain</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pomodoro.html" class="active">Pomodoro</a>
+                <a href="planner.html">Planner</a>
+                <a href="motivation.html">Motivation</a>
+                <a href="vpn.html">FocusFlow</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="pomodoro-section">
+            <h1>Pomodoro Timer</h1>
+            <p class="description">
+                The Pomodoro timer helps people manage their time. It's based on the Pomodoro Technique, which Francesco Cirillo came up with in the late 1980s. This method gets you to work in short focused bursts with quick breaks in between. It has an impact on your focus and stops you from getting tired or burned out, thanks to the regular rest periods. When you use this timer, you can break down your work into smaller chunks, stay on task, and keep up your output all day long. It gives your work a structure, which cuts down on putting things off and lets you stay zeroed in. Because of this, it's a great way to boost how much you get done overall.
+            </p>
+
+            <div class="timer-container">
+                <div class="timer-settings">
+                    <div class="setting">
+                        <label for="work-time">Work Time (minutes):</label>
+                        <input type="number" id="work-time" value="25" min="1" max="60">
+                    </div>
+                    <div class="setting">
+                        <label for="break-time">Break Time (minutes):</label>
+                        <input type="number" id="break-time" value="5" min="1" max="30">
+                    </div>
+                </div>
+
+                <div class="timer-display">
+                    <div id="time">25:00</div>
+                    <div id="phase">WORK</div>
+                </div>
+
+                <div class="timer-controls">
+                    <button id="start-btn">Start</button>
+                    <button id="pause-btn">Pause</button>
+                    <button id="resume-btn">Resume</button>
+                    <button id="reset-btn" onclick="resetTimer()">Reset</button>
+                </div>
+
+                <div class="session-log">
+                    <h3>Session Log</h3>
+                    <div id="log-entries"></div>
+                    <div class="total-time">
+                        Total Time Worked: <span id="total-time">0 minutes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="floating-tasks">
+        <h3>Current Tasks</h3>
+        <ul id="floating-tasks-list"></ul>
+    </div>
+
+    <div class="theme-switcher">
+        <button class="theme-btn" onclick="setTheme('light')">Light</button>
+        <button class="theme-btn" onclick="setTheme('dark')">Dark</button>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="floating-tasks.js"></script>
+    <script src="pomodoro.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner - ClockGain</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="planner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">ClockGain</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pomodoro.html">Pomodoro</a>
+                <a href="planner.html" class="active">Planner</a>
+                <a href="motivation.html">Motivation</a>
+                <a href="vpn.html">FocusFlow</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="planner-section">
+            <h1>Task Planner</h1>
+            
+            <div class="notebook">
+                <div class="task-input">
+                    <input type="text" id="task-input" placeholder="Enter a new task...">
+                    <button onclick="addTask()">Add Task</button>
+                </div>
+                
+                <div class="tasks-container">
+                    <div class="tasks-list" id="tasks-list">
+                        <!-- Tasks will be added here -->
+                    </div>
+                </div>
+                
+                <div class="task-summary">
+                    <div class="summary-item">
+                        <span>Total Tasks:</span>
+                        <span id="total-tasks">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Completed Tasks:</span>
+                        <span id="completed-tasks">0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="floating-planner" class="floating-planner hidden">
+        <div class="floating-header">
+            <span>Quick Tasks</span>
+            <button onclick="toggleFloatingPlanner()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="floating-tasks" class="floating-tasks">
+            <!-- Tasks will be mirrored here -->
+        </div>
+    </div>
+
+    <button id="show-planner-btn" class="show-planner-btn" onclick="toggleFloatingPlanner()">
+        <i class="fas fa-tasks"></i>
+    </button>
+
+    <div class="theme-switcher">
+        <button class="theme-btn" onclick="setTheme('light')">Light</button>
+        <button class="theme-btn" onclick="setTheme('dark')">Dark</button>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="planner.js"></script>
+</body>
+</html>
