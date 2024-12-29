@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation - ClockGain</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="motivation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">ClockGain</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pomodoro.html">Pomodoro</a>
+                <a href="planner.html">Planner</a>
+                <a href="motivation.html" class="active">Motivation</a>
+                <a href="vpn.html">FocusFlow</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="motivation-section">
+            <h1>Daily Motivation</h1>
+            <div class="quotes-section">
+                <blockquote class="quote">
+                    "Success is the sum of small efforts, repeated day in and day out."
+                    <footer>- Robert Collier</footer>
+                </blockquote>
+                
+                <blockquote class="quote">
+                    "The way to get started is to quit talking and begin doing."
+                    <footer>- Walt Disney</footer>
+                </blockquote>
+                
+                <blockquote class="quote">
+                    "Don't wait. The time will never be just right."
+                    <footer>- Napoleon Hill</footer>
+                </blockquote>
+            </div>
+
+            <div class="description">
+                These powerful quotes remind us that overcoming procrastination is key to achieving success. 
+                This webpage not only offers tools to help you stay focused, but also lists motivational books 
+                by renowned authors to inspire action and build better habits.
+            </div>
+
+            <div class="book-recommendations">
+                <h2>Recommended Books</h2>
+                <div class="books-grid">
+                    <div class="book-card">
+                        <img src="images/atomic-habits.jpg" alt="Atomic Habits">
+                        <h3>Atomic Habits</h3>
+                    </div>
+                    <div class="book-card">
+                        <img src="images/deep-work.jpg" alt="Deep Work">
+                        <h3>Deep Work</h3>
+                    </div>
+                    <div class="book-card">
+                        <img src="images/power-of-habit.jpg" alt="The Power of Habit">
+                        <h3>The Power of Habit</h3>
+                    </div>
+                    <div class="book-card">
+                        <img src="images/eat-that-frog.jpg" alt="Eat That Frog!">
+                        <h3>Eat That Frog!</h3>
+                    </div>
+                    <div class="book-card">
+                        <img src="images/getting-things-done.jpg" alt="Getting Things Done">
+                        <h3>Getting Things Done</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="theme-switcher">
+        <button class="theme-btn" onclick="setTheme('light')">Light</button>
+        <button class="theme-btn" onclick="setTheme('dark')">Dark</button>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="motivation.js"></script>
+</body>
+</html>

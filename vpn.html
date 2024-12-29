@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow - Website Blocker Apps</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="vpn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">ClockGain</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pomodoro.html">Pomodoro</a>
+                <a href="planner.html">Planner</a>
+                <a href="motivation.html">Motivation</a>
+                <a href="vpn.html" class="active">FocusFlow</a>
+            </div>
+        </div>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>FocusFlow</h1>
+            
+            <div class="description">
+                <p>Here's a selection of some of the top applications designed to help you block distracting websites and apps, allowing you to concentrate on what truly matters and boost your productivity, whether you're working or studying. These tools enable you to customize your experience by blocking specific sites or apps for a set duration. Check out the options below to discover the one that will help you regain control of your time and make distractions a rare occurrence.</p>
+            </div>
+
+            <div class="app-grid">
+                <div class="app-card">
+                    <img src="images/freedom.png" alt="Freedom App">
+                    <h3>Freedom</h3>
+                    <p>Block websites and apps across all your devices</p>
+                    <a href="https://freedom.to/" target="_blank" class="app-link">Learn More</a>
+                </div>
+                <div class="app-card">
+                    <img src="images/cold-turkey.png" alt="Cold Turkey">
+                    <h3>Cold Turkey</h3>
+                    <p>Strict website and application blocker</p>
+                    <a href="https://getcoldturkey.com/" target="_blank" class="app-link">Learn More</a>
+                </div>
+                <div class="app-card">
+                    <img src="images/focusme.png" alt="FocusMe">
+                    <h3>FocusMe</h3>
+                    <p>Comprehensive distraction blocking solution</p>
+                    <a href="https://focusme.com/" target="_blank" class="app-link">Learn More</a>
+                </div>
+                <div class="app-card">
+                    <img src="images/stayfocused.png" alt="StayFocused">
+                    <h3>StayFocused</h3>
+                    <p>Simple and effective Chrome extension</p>
+                    <a href="https://chrome.google.com/webstore/detail/stayfocusd/laankejkbhbdhmipfmgcngdelahlfoji" target="_blank" class="app-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="theme-switcher">
+        <button class="theme-btn" onclick="setTheme('light')">Light</button>
+        <button class="theme-btn" onclick="setTheme('dark')">Dark</button>
+    </div>
+
+    <script src="theme.js"></script>
+</body>
+</html>
